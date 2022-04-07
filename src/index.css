@@ -19,15 +19,16 @@ code {
 .board {
   width: 168px;
   height: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #403b3b45;
 }
 
 .box {
   background-color: blue;
-  border: 1px solid #ccc;
-  border-bottom: none;
+  border: 1px solid #403b3b45;
   width: 40px;
   height: 40px;
-  display: inline-block;
 }
 
 .red {

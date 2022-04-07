@@ -1,0 +1,13 @@
+env: standard
+runtime: nodejs16
+
+handlers:
+  - url: /assets
+    static_dir: assets
+
+  - url: /(.*\.(js|css))$
+    static_files: assets/\1
+    upload: assets/.*\.(json|ico|js|css)$
+  - url: .*
+    static_files: index.html
+    upload: index.html
